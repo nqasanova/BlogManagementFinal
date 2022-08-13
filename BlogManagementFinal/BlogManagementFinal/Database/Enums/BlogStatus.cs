@@ -1,10 +1,10 @@
 ﻿using System;
 namespace BlogManagementFinal.Database.Enums
 {
-    public class BlogStatus
+    public enum BlogStatus
     {
-        public BlogStatus()
-        {
-        }
+        Created = 1,
+        Approved = 2,
+        Rejected = 3,
     }
 }
