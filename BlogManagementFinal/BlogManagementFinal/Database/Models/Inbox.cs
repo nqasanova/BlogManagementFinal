@@ -1,10 +1,17 @@
 ﻿using System;
+using BlogManagementFinal.Database.Models.Common;
+
 namespace BlogManagementFinal.Database.Models
 {
-    public class Inbox
+    class Inbox : Entity<int>
     {
-        public Inbox()
+        public User Receiver { get; set; }
+        public string Notification { get; set; }
+
+        public Inbox(User receiver, string notification)
         {
+            Receiver = receiver;
+            Notification = notification;
         }
     }
 }
