@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ApplicationLogic\" />
+    <None Remove="Database\" />
+    <None Remove="UI\" />
+    <None Remove="Database\Enums\" />
+    <None Remove="Database\Models\" />
+    <None Remove="Database\Repository\" />
+    <None Remove="Database\Models\Common\" />
+    <None Remove="Database\Repository\Common\" />
+    <None Remove="ApplicationLogic\Validations\" />
+    <None Remove="ApplicationLogic\Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ApplicationLogic\" />
+    <Folder Include="Database\" />
+    <Folder Include="UI\" />
+    <Folder Include="Database\Enums\" />
+    <Folder Include="Database\Models\" />
+    <Folder Include="Database\Repository\" />
+    <Folder Include="Database\Models\Common\" />
+    <Folder Include="Database\Repository\Common\" />
+    <Folder Include="ApplicationLogic\Validations\" />
+    <Folder Include="ApplicationLogic\Services\" />
+  </ItemGroup>
+</Project>
