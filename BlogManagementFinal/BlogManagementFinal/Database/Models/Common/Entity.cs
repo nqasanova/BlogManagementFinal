@@ -1,10 +1,9 @@
 ﻿using System;
 namespace BlogManagementFinal.Database.Models.Common
 {
-    public class Entity
+    public abstract class Entity<TId>
     {
-        public Entity()
-        {
-        }
+        public TId Id { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
     }
 }
