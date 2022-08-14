@@ -62,7 +62,7 @@ namespace BlogManagementFinal.ApplicationLogic.Validations
 
         public static bool IsValidPassword(string password)
         {
-            Regex regex = new Regex(@"^(?=.*[0-9])(?=.*[A-Z])(?=[a-zA-Z0-9]{8,}).*[a-z]$");
+            Regex regex = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$");
 
             if (regex.IsMatch(password))
             {
