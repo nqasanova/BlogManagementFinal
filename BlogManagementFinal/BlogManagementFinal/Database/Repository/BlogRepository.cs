@@ -10,11 +10,18 @@ namespace BlogManagementFinal.Database.Repository
         static Random randomID = new Random();
 
         private static string _code;
+
         public static string RandomCode
         {
             get
             {
                 _code = "BL" + randomID.Next(0, 10000);
+
+                while (GetByCode(_code) != null)
+                {
+                    _code = "Bl" + randomID.Next(0, 10000);
+                }
+
                 return _code;
             }
         }
