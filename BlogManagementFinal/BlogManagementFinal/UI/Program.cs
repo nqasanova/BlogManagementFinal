@@ -37,17 +37,17 @@ namespace BlogManagementFinal
 
                 else if (command == "/show-blogs-with-comments")
                 {
-                    BlogServices.ShowBlogs();
+                    BlogService.ShowBlogs();
                 }
 
                 else if (command == "/show-filtered-blogs-with-comments")
                 {
-                    BlogServices.ShowFilteredBlogsWithComments();
+                    BlogService.ShowFilteredBlogsWithComments();
                 }
 
                 else if (command == "/find-blog-by-code")
                 {
-                    BlogServices.FindBlogByCode();
+                    BlogService.FindBlogByCode();
                 }
 
                 else if (command == "/exit")
