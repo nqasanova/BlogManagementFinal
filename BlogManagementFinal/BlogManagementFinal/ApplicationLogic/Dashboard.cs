@@ -116,27 +116,27 @@ namespace BlogManagementFinal.ApplicationLogic
 
                 if (command == "/inbox")
                 {
-                    BlogServices.Inbox();
+                    BlogService.Inbox();
                 }
 
                 else if (command == "/add-comment")
                 {
-                    BlogServices.AddComment();
+                    BlogService.AddComment();
                 }
 
                 else if (command == "blogs")
                 {
-                    BlogServices.MyBlogs();
+                    BlogService.MyBlogs();
                 }
 
                 else if (command == "/add-blog")
                 {
-                    BlogServices.AddBlog();
+                    BlogService.AddBlog();
                 }
 
                 else if (command == "/delete-blog")
                 {
-                    BlogServices.DeleteBlog();
+                    BlogService.DeleteBlog();
                 }
 
                 else if (command == "/logout")
