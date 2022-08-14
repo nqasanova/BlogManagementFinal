@@ -7,7 +7,7 @@ using BlogManagementFinal.Database.Repository;
 
 namespace BlogManagementFinal.ApplicationLogic.Services
 {
-    partial class BlogServices
+    partial class BlogService
     {
         private static BlogRepository blogRepository = new BlogRepository();
         private static CommentRepository commentRepository = new CommentRepository();
@@ -185,7 +185,7 @@ namespace BlogManagementFinal.ApplicationLogic.Services
         }
     }
 
-    partial class BlogServices
+    partial class BlogService
     {
         public static void Inbox()
         {
@@ -296,7 +296,7 @@ namespace BlogManagementFinal.ApplicationLogic.Services
         }
     }
 
-    partial class BlogServices
+    partial class BlogService
     {
         public static void BlogManagement()
         {
