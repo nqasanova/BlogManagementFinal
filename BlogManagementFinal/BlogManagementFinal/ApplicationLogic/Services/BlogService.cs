@@ -15,7 +15,7 @@ namespace BlogManagementFinal.ApplicationLogic.Services
 
         public static void ShowBlogs()
         {
-            List<Blog> blogs = blogRepository.GetAll();
+         List<Blog> blogs = blogRepository.GetAll();
             int counter = 1;
 
             foreach (Blog blog in blogs)
@@ -23,11 +23,11 @@ namespace BlogManagementFinal.ApplicationLogic.Services
                 if (blog.Status == BlogStatus.Approved)
                 {
                     Console.WriteLine(counter + "." + blog.GetBlogInfo());
-                    List<Comment> commentss = commentRepository.GetAll(c => c.Blog == blog);
+                    List<Comment> comments = commentRepository.GetAll(c => c.Blog == blog);
 
-                    for (int i = 0; i < commentss.Count; i++)
+                    for (int i = 0; i < comments.Count; i++)
                     {
-                        Console.WriteLine($"{i + 1} {commentss[i].GetCommentInfo()}");
+                        Console.WriteLine($"{i + 1} {comments[i].GetCommentInfo()}");
                     }
                 }
 
